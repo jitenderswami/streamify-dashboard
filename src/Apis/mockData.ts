@@ -1,0 +1,160 @@
+
+export const METRICS = {
+    totalUsers: {
+        count: 12000,
+        percentIncrement: 5.4,
+    },
+    activeUsers: {
+        count: 8500,
+        percentIncrement: 2.8,
+    },
+    totalStreams: {
+        count: 1800000,
+        percentIncrement: 7.2,
+    },
+    revenue: {
+        amount: 45000,
+        currency: "USD",
+        percentIncrement: 6.1,
+    },
+    topArtist: {
+        currentMonth: "Artist A",
+        lastMonth: "Artist B",
+    },
+} as const;
+
+export type SongDataPoint = { name: string, artist: string, count: number, artistImage: string }
+
+export const TOP_SONGS: SongDataPoint[] = [
+    { name: "Blinding Lights", artist: "The Weeknd", count: 1200000, artistImage: "https://ui.shadcn.com/avatars/01.png" },
+    { name: "Shape of You", artist: "Ed Sheeran", count: 1100000, artistImage: "https://ui.shadcn.com/avatars/02.png" },
+    { name: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", count: 1050000, artistImage: "https://ui.shadcn.com/avatars/03.png" },
+    { name: "Dance Monkey", artist: "Tones and I", count: 950000, artistImage: "https://ui.shadcn.com/avatars/04.png" },
+    { name: "Someone You Loved", artist: "Lewis Capaldi", count: 900000, artistImage: "https://ui.shadcn.com/avatars/05.png" },
+    { name: "Sunflower", artist: "Post Malone & Swae Lee", count: 850000, artistImage: "https://ui.shadcn.com/avatars/01.png" },
+    { name: "Bad Guy", artist: "Billie Eilish", count: 800000, artistImage: "https://ui.shadcn.com/avatars/02.png" },
+    { name: "Old Town Road", artist: "Lil Nas X", count: 780000, artistImage: "https://ui.shadcn.com/avatars/03.png" },
+    { name: "Perfect", artist: "Ed Sheeran", count: 760000, artistImage: "https://ui.shadcn.com/avatars/04.png" },
+    { name: "Shallow", artist: "Lady Gaga & Bradley Cooper", count: 740000, artistImage: "https://ui.shadcn.com/avatars/05.png" },
+] as const
+
+export const REVENUE_DATA = [
+    { month: "March", revenue: 18600 },
+    { month: "April", revenue: 19500 },
+    { month: "May", revenue: 20200 },
+    { month: "June", revenue: 21500 },
+    { month: "July", revenue: 22500 },
+    { month: "August", revenue: 23500 },
+] as const
+
+
+
+export type GrowthDataPointType = {
+    date: string,
+    total: number,
+    active: number
+}
+
+export const USER_GROWTH_DATA: GrowthDataPointType[] = [
+    { date: "2024-04-01", total: 222, active: 150 },
+    { date: "2024-04-02", total: 97, active: 180 },
+    { date: "2024-04-03", total: 167, active: 120 },
+    { date: "2024-04-04", total: 242, active: 260 },
+    { date: "2024-04-05", total: 373, active: 290 },
+    { date: "2024-04-06", total: 301, active: 340 },
+    { date: "2024-04-07", total: 245, active: 180 },
+    { date: "2024-04-08", total: 409, active: 320 },
+    { date: "2024-04-09", total: 59, active: 110 },
+    { date: "2024-04-10", total: 261, active: 190 },
+    { date: "2024-04-11", total: 327, active: 350 },
+    { date: "2024-04-12", total: 292, active: 210 },
+    { date: "2024-04-13", total: 342, active: 380 },
+    { date: "2024-04-14", total: 137, active: 220 },
+    { date: "2024-04-15", total: 120, active: 170 },
+    { date: "2024-04-16", total: 138, active: 190 },
+    { date: "2024-04-17", total: 446, active: 360 },
+    { date: "2024-04-18", total: 364, active: 410 },
+    { date: "2024-04-19", total: 243, active: 180 },
+    { date: "2024-04-20", total: 89, active: 150 },
+    { date: "2024-04-21", total: 137, active: 200 },
+    { date: "2024-04-22", total: 224, active: 170 },
+    { date: "2024-04-23", total: 138, active: 230 },
+    { date: "2024-04-24", total: 387, active: 290 },
+    { date: "2024-04-25", total: 215, active: 250 },
+    { date: "2024-04-26", total: 75, active: 130 },
+    { date: "2024-04-27", total: 383, active: 420 },
+    { date: "2024-04-28", total: 122, active: 180 },
+    { date: "2024-04-29", total: 315, active: 240 },
+    { date: "2024-04-30", total: 454, active: 380 },
+    { date: "2024-05-01", total: 165, active: 220 },
+    { date: "2024-05-02", total: 293, active: 310 },
+    { date: "2024-05-03", total: 247, active: 190 },
+    { date: "2024-05-04", total: 385, active: 420 },
+    { date: "2024-05-05", total: 481, active: 390 },
+    { date: "2024-05-06", total: 498, active: 520 },
+    { date: "2024-05-07", total: 388, active: 300 },
+    { date: "2024-05-08", total: 149, active: 210 },
+    { date: "2024-05-09", total: 227, active: 180 },
+    { date: "2024-05-10", total: 293, active: 330 },
+    { date: "2024-05-11", total: 335, active: 270 },
+    { date: "2024-05-12", total: 197, active: 240 },
+    { date: "2024-05-13", total: 197, active: 160 },
+    { date: "2024-05-14", total: 448, active: 490 },
+    { date: "2024-05-15", total: 473, active: 380 },
+    { date: "2024-05-16", total: 338, active: 400 },
+    { date: "2024-05-17", total: 499, active: 420 },
+    { date: "2024-05-18", total: 315, active: 350 },
+    { date: "2024-05-19", total: 235, active: 180 },
+    { date: "2024-05-20", total: 177, active: 230 },
+    { date: "2024-05-21", total: 82, active: 140 },
+    { date: "2024-05-22", total: 81, active: 120 },
+    { date: "2024-05-23", total: 252, active: 290 },
+    { date: "2024-05-24", total: 294, active: 220 },
+    { date: "2024-05-25", total: 201, active: 250 },
+    { date: "2024-05-26", total: 213, active: 170 },
+    { date: "2024-05-27", total: 420, active: 460 },
+    { date: "2024-05-28", total: 233, active: 190 },
+    { date: "2024-05-29", total: 78, active: 130 },
+    { date: "2024-05-30", total: 340, active: 280 },
+    { date: "2024-05-31", total: 178, active: 230 },
+    { date: "2024-06-01", total: 178, active: 200 },
+    { date: "2024-06-02", total: 470, active: 410 },
+    { date: "2024-06-03", total: 103, active: 160 },
+    { date: "2024-06-04", total: 439, active: 380 },
+    { date: "2024-06-05", total: 88, active: 140 },
+    { date: "2024-06-06", total: 294, active: 250 },
+    { date: "2024-06-07", total: 323, active: 370 },
+    { date: "2024-06-08", total: 385, active: 320 },
+    { date: "2024-06-09", total: 438, active: 480 },
+    { date: "2024-06-10", total: 155, active: 200 },
+    { date: "2024-06-11", total: 92, active: 150 },
+    { date: "2024-06-12", total: 492, active: 420 },
+    { date: "2024-06-13", total: 81, active: 130 },
+    { date: "2024-06-14", total: 426, active: 380 },
+    { date: "2024-06-15", total: 307, active: 350 },
+    { date: "2024-06-16", total: 371, active: 310 },
+    { date: "2024-06-17", total: 475, active: 520 },
+    { date: "2024-06-18", total: 107, active: 170 },
+    { date: "2024-06-19", total: 341, active: 290 },
+    { date: "2024-06-20", total: 408, active: 450 },
+    { date: "2024-06-21", total: 169, active: 210 },
+    { date: "2024-06-22", total: 317, active: 270 },
+    { date: "2024-06-23", total: 480, active: 530 },
+    { date: "2024-06-24", total: 132, active: 180 },
+    { date: "2024-06-25", total: 141, active: 190 },
+    { date: "2024-06-26", total: 434, active: 380 },
+    { date: "2024-06-27", total: 448, active: 490 },
+    { date: "2024-06-28", total: 149, active: 200 },
+    { date: "2024-06-29", total: 103, active: 160 },
+    { date: "2024-06-30", total: 446, active: 400 }
+];
+
+export type RevenueSourcesDataPointType = { source: string; revenue: number; fill: string }
+
+export const REVENUE_SOURCES_DATA: RevenueSourcesDataPointType[] = [
+    { source: "Ads", revenue: 27500, fill: "hsl(240, 2%, 26%)" },
+    { source: "Subscriptions", revenue: 125000, fill: "hsl(240, 2%, 36%)" },
+    { source: "In-App Purchases", revenue: 48000, fill: "hsl(240, 2%, 46%)" },
+    { source: "Merchandise", revenue: 33000, fill: "hsl(240, 2%, 56%)" },
+    { source: "Partnerships", revenue: 42000, fill: "hsl(240, 2%, 66%)" },
+];
