@@ -21,7 +21,9 @@ const AppHeader = () => {
 				<div className="w-[50px] h-[50px] " onClick={handleAppLogoClick}>
 					<StreamifyIcon />
 				</div>
-				<div className="text-3xl font-bold text-muted-foreground tracking-widest italic">Streamify</div>
+				<div className="text-3xl font-bold text-muted-foreground tracking-widest italic">
+					Streamify Dashboard
+				</div>
 			</div>
 
 			<div onClick={handleLogoutClick}>

@@ -6,6 +6,7 @@ import LoggedOutLayout from "./layouts/LoggedOut";
 import LoggedInLayout from "./layouts/LoggedIn";
 import { AuthHOC } from "./HOCs/AuthHOC";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { LucideLoaderCircle } from "lucide-react";
 
 // Lazing loading components pages.
 const HomeDashboard = lazy(() => import("./pages/LoggedInPages/HomeDashboard"));
@@ -24,7 +25,7 @@ function App() {
 				<Suspense
 					fallback={
 						<div className="h-[100vh] w-[100vw] flex justify-center items-center bg-[#f0f6ff]">
-							Fall back
+							<LucideLoaderCircle color="#09090B" width={50} height={50} />
 						</div>
 					}
 				>

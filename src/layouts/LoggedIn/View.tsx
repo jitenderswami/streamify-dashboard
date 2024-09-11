@@ -16,7 +16,6 @@ const View: React.FC<ViewProps> = ({ children, handleTabClick, activeTab }) => {
 			<AppHeader />
 			<Separator />
 			<div className="w-full flex flex-col gap-[12px] px-[8px] pt-[12px]  md:px-[12px] md:pt-[16px]">
-				<div className="text-2xl md:text-3xl  font-bold">Dashboard</div>
 				<div className="w-[300px]">
 					<Tabs defaultValue={DASHBOARD_TABS[0].key} value={activeTab.key}>
 						<TabsList className="flex items-start gap-[20px]">

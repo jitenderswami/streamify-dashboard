@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-empty-object-type */
+import { LucideLoaderCircle } from "lucide-react";
 import React from "react";
 
 interface DataBoardViewProps {
@@ -6,7 +7,11 @@ interface DataBoardViewProps {
 }
 
 const DataBoardView: React.FC<DataBoardViewProps> = () => {
-	return <div>Data Board work in progress</div>;
+	return (
+		<div>
+			Data Board work in progress <LucideLoaderCircle color="#09090B" />
+		</div>
+	);
 };
 
 export default DataBoardView;
